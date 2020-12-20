@@ -20,5 +20,6 @@ function SetDateTime(){
 }
 
 function Search(){
-	alert("Hello")
+	let searchQuery = document.getElementById("search-bar").value;
+	alert(searchQuery)
 }

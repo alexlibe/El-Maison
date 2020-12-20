@@ -11,7 +11,12 @@ body {
 	background-color: #0c0c0d;
 }
 
-#main-flex-container {
+a {
+	text-decoration: none;
+	color: #0000ff;
+}
+
+#main-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,16 +36,25 @@ body {
 	height: 100%;
 }
 
+#navigation-content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+#search-bar {
+	background-color: #000000;
+	border-style: none;
+	color: #ffffff;
+}
+
+#search-content {
+	flex-grow: 1;
+}
+
 .navigation-columns {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 10px;
-}
-
-.flex-container {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
 }

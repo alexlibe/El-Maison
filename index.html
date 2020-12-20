@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
 <title>Home</title>
+
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="./css/Home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="./css/index.css">
 <script type="application/javascript" src="./js/index.js"></script>
 </head>
 <body onload="StartTime()">
-<div id="main-flex-container">
+<div id="main-content">
 	<div id="navigation">
 		<img src="./images/temple.gif" alt="Pumpkin Image" width="500" height="291">
-		<div class="flex-container">
-			<div>
-				<input type="search">
+		<div id="navigation-content">
+			<div id="search-content">
+				<input type="search" id="search-bar" placeholder="Search..." autofocus>
 				<button type="button" onclick="Search()">Search</button>
 			</div>
 			<div style="flex-direction: row; display: flex;">
 				<div class="navigation-columns">
 					<p>Media</p>
+					<a href="https://www.youtube.com/">Youtube</a>
 				</div>
 				<div class="navigation-columns">
 					<p>Others</p>
