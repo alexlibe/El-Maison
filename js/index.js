@@ -18,3 +18,7 @@ function SetDateTime(){
 	dateElement.innerText = date.toLocaleDateString();
 	timeElement.innerText = date.toLocaleTimeString();
 }
+
+function Search(){
+	alert("Hello")
+}

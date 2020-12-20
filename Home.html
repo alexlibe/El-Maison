@@ -10,17 +10,25 @@
 <div id="main-flex-container">
 	<div id="navigation">
 		<img src="./images/temple.gif" alt="Pumpkin Image" width="500" height="291">
-		<div class="navigation-columns">
-			<p>Media</p>
-		</div>
-		<div class="navigation-columns">
-			<p>Others</p>
-			<a href="https://github.com/">Github</a>
-		</div>
-		<div class="navigation-columns">
-			<p>Date</p>
-			<p id="date"></p>
-			<p id="time"></p>
+		<div class="flex-container">
+			<div>
+				<input type="search">
+				<button type="button" onclick="Search()">Search</button>
+			</div>
+			<div style="flex-direction: row; display: flex;">
+				<div class="navigation-columns">
+					<p>Media</p>
+				</div>
+				<div class="navigation-columns">
+					<p>Others</p>
+					<a href="https://github.com/alexlibe">Github</a>
+				</div>
+				<div class="navigation-columns">
+					<p>Date</p>
+					<p id="date"></p>
+					<p id="time"></p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
