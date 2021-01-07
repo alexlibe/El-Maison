@@ -20,6 +20,8 @@ function SetDateTime(){
 }
 
 function Search(){
+	const DDGO_URL = "https://duckduckgo.com/?kp=-1&kl=us-en&q=";
 	let searchQuery = document.getElementById("search-bar").value;
-	alert(searchQuery)
+
+	window.location.href = DDGO_URL + searchQuery;
 }
