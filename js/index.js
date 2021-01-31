@@ -23,6 +23,13 @@ function Search(){
 	const DDGO_URL = "https://duckduckgo.com/?kp=-1&kl=us-en&q=";
 	let searchQuery = document.getElementById("search-bar").value;
 	searchQuery = searchQuery.replace(/ /g, "+");
+	searchQuery = searchQuery.replace(/#/g, "%23");
 	
 	window.location.href = DDGO_URL + searchQuery;
+}
+
+function KeyPressed(event){
+	if (event.key === "Enter"){
+		Search();
+	}
 }
